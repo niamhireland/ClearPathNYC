@@ -1,0 +1,88 @@
+
+.location_input_container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Hide these two initially by default */
+.mapboxgl-ctrl-geocoder--button, .mapboxgl-ctrl-geocoder--icon.mapboxgl-ctrl-geocoder--icon-loading
+{
+    display: none;
+}
+
+.map_container {
+    height: 300px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+.mapboxgl-ctrl-geocoder{
+    background-color: rgb(91, 104, 104);
+    min-width: 150px;
+}
+
+@media screen and (min-width: 640px) {
+    .mapboxgl-ctrl-geocoder
+    {
+        width: 100%;
+    }
+}
+
+.mapboxgl-ctrl-geocoder.night{
+    background-color: rgb(91, 104, 104);
+}
+
+.location_input_container.night .mapboxgl-ctrl-geocoder--input,
+.location_input_container.night .mapboxgl-ctrl-geocoder--input::placeholder,
+.location_input_container.night .mapboxgl-ctrl-geocoder--input:focus {
+    color: rgb(181, 185, 189);
+}
+
+
+.mapboxgl-ctrl-geocoder--button:hover
+{
+    cursor: pointer;
+}
+
+.night .mapboxgl-ctrl-geocoder--button
+{
+    background-color: rgb(0 0 0 / 5%);
+}
+
+.mapboxgl-ctrl-geocoder.day{
+    background-color: rgb(255, 255, 255);
+}
+
+.mapboxgl-ctrl-geocoder--input.day {
+    color:rgb(0, 0, 0);
+}
+
+.night .mapboxgl-ctrl-geocoder--input::placeholder
+{
+    color: rgb(181, 185, 189);
+}
+
+/* Night Mode geocoder suggestion styling */
+.mapboxgl-ctrl-geocoder.night .suggestions
+{
+    background-color: #808080;
+}
+
+.location_finder_container .location_input_container .mapboxgl-ctrl-geocoder.night .suggestions > li > a
+{
+    color: white;
+    background-color: #808080;
+}
+
+.location_finder_container .location_input_container .mapboxgl-ctrl-geocoder.night .suggestions > li > a:hover
+{
+    color: white;
+    background-color: #a1a1a1;
+}
+
+.mapboxgl-ctrl-geocoder--powered-by>a
+{
+    display: none;
+}

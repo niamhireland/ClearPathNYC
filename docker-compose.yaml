@@ -1,0 +1,60 @@
+version: '3.8'
+
+services:
+
+  modeling:
+    image: asouthwick1/nycapp:model
+    container_name: model
+    ports:
+      - "4000:5000"
+    networks:
+      - clearpath_net
+
+  asp-build:
+    image: asouthwick1/nycapp:aspbuild
+    container_name: asp-build
+    restart: on-failure:3
+    ports:
+      - "5001:8080"
+    networks:
+      - clearpath_net
+
+  asp-run:
+    image: asouthwick1/nycapp:asprun
+    container_name: asp-run
+    restart: on-failure:3
+    ports:
+      - "5000:8080"
+    env_file: 
+      - .env
+    networks:
+      - clearpath_net
+
+  react-app:
+    image: asouthwick1/nycapp:react
+    container_name: react-app
+    ports:
+      - "3000:80"
+    depends_on:
+      - asp-run
+    networks:
+      - clearpath_net
+
+  nginx:
+    image: asouthwick1/nycapp:proxy
+    container_name: nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    depends_on:
+      - react-app
+      - asp-run
+      - modeling
+      - asp-build
+    networks:
+      - clearpath_net
+
+networks:
+  clearpath_net:
+    external: true
+    driver: bridge

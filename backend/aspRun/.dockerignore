@@ -1,0 +1,12 @@
+# Build folders
+**/bin/
+**/obj/
+
+# git folder
+.git/
+.gitignore
+
+# .vs folder
+**/.vs/
+
+.env

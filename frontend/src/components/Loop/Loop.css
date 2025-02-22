@@ -1,0 +1,59 @@
+/* Loop.css */
+
+.loop_container {
+  /* background-color: #ffffcc; */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+}
+
+.loop-toggle_container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.loop_toggle {
+  margin-left: 10px;
+}
+
+.loop_label {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.loop_distance_selector {
+  display: flex;
+  align-items: center;
+  padding-right: 43px;
+}
+
+input[type=number] {
+  position: relative; 
+  padding: 5px;
+  padding-right: 25px;
+  text-align: right;
+}
+
+input[type=number]::-webkit-outer-spin-button, 
+input[type=number]::-webkit-inner-spin-button {
+  width: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+}
+.dist_label{
+  font-size: 20px;
+  font-weight: bold;
+  padding-right: 3px;
+  margin-right: 5px;
+  min-width: 55.56px;
+  text-align: center;
+}
+
+.loop_container > .busy_go_row {
+  margin-right: 16px;
+}
