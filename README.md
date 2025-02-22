@@ -1,6 +1,7 @@
 # ClearPath
 
-![intro](https://github.com/user-attachments/assets/fccc3d09-be4c-40ef-92f1-c6251dc480d1)
+![Unknown](https://github.com/user-attachments/assets/a183d7ec-b378-404c-8034-9205a2a89edb)
+
 
 ## About The Project
 
