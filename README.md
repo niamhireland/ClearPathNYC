@@ -13,14 +13,14 @@ Our final application, ClearPathNYC, is aimed at joggers and pedestrians in Manh
 + Dark and light modes.
 + Exportable routes, which can be uploaded to Strava/Garmin.
 + Colour blind accessibility mode.
-+ City weather and air quality updates.
++ Updates on city weather and air quality.
 + Additional information on local points of interest and pollutants.
 
-Clips of the running application have been compiled here: [https://youtu.be/LlCiB7U1NTI])
+Clips of the running application have been compiled here: [https://youtu.be/LlCiB7U1NTI].
 
 ## Built With 
 
-We built each of the services in this application as microservices, deploying them with Docker. It includes a JavaScript React frontend, a C# .NET backend, a NoSQL (Neo4j) backend for containing routing information and a .NET service for updating the other database. XGBoost models and a Flask service interact with the models to calculate predictive crowding levels. 
+We built each of the services in this application as microservices, deploying them with Docker. It includes a JavaScript React frontend and a C# .NET backend. There is a NoSQL (Neo4j) database for routing information storage and a .NET service for database updates. XGBoost models and a Flask service interact with the models to calculate predictive crowding levels. 
 
 The diagram below illustrates how they work together.
 
