@@ -7,6 +7,8 @@
 
 This project formed a major component of my Masters in Computer Science at UCD. Over a 10 week period in summer 2024, we were tasked to develop and deploy an application that utilised "busyness" and was set in NYC. Each team of six had distinct roles. As Team Coordination Lead, I was primarily tasked with coordinating team efforts. I was in charge of tracking progress, maintaining documentation and updating records. In terms of code work, I worked extensively on the machine learning model/data analytics, as well as assisting in backend development.
 
+I led the research, writing and editing of our team IEEE paper, which can be viewed in these files.
+
 Our final application, ClearPathNYC, is aimed at joggers and pedestrians in Manhattan. It offers the following features: 
 + Generating routes by loop or point-to-point.
 + Toggling between busy and quiet routes.
